@@ -136,7 +136,7 @@ class AuthController {
     // Backend - loginEmail
     async loginEmail(req, res) {
         const { email, password } = req.body;
-      
+        
         try {
           let user = await userService.findUser({ email: email });
       
